@@ -1,0 +1,470 @@
+/* CSS Reset */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Main Styles */
+
+/* header styles */
+
+nav {
+	background: #222;
+	color: #FFF;
+	padding: 1%;
+}
+
+/* logo */
+header #logo {
+	color: #FFF;
+	text-decoration: none;
+	width: 49%;
+	display: inline-block;;
+}
+
+header #logo img {
+	width: 50px;
+	border-radius: 2px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+/* site-main */
+#site-main {
+	padding-top: 1%;
+	margin-top: 50px;
+}
+
+/* hero */
+.hero {
+	min-height: 800px;
+	text-align: center;
+	background: #555;
+	/* background-image: */
+	background-size: cover;
+}
+
+#main-hero {
+	background-image: url('../img/hero-stars-comp.jpg');
+}
+
+.hero-content {
+	color: #FFF;
+	padding-top: 130px;
+	line-height: 1;
+}
+
+.hero-title {
+	margin: 0;
+	padding-top: 3%;
+	font-size: 100px;
+}
+
+.hero-content p {
+	font-size: 50px;
+	margin-bottom: 60px;
+}
+
+.hero-content a {
+	color: #FFF;
+	border: 3px solid #FFF;
+	border-radius: 3px;
+	padding: 15px 30px;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 28px;
+}
+
+/* features */
+.site-section {
+	padding-bottom: 50px;
+	padding-top: 100px;
+}
+
+.site-section-secondary {
+	background: #EFEFEF;
+}
+
+.site-section-inside {
+	width: 80%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-header h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #777;
+}
+
+/* intro */
+#intro .btn {
+
+}
+
+/* feature box */
+.feature-box {
+	display: inline-block;
+	/* width: 33%; */
+	padding: 20px 30px;
+	line-height: 1;
+	text-align: center;
+}
+
+.feature-box img {
+	width: 80px;
+	margin-bottom: 15px;
+}
+
+.feature-box h5 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #999;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+/* about */
+.hero-about {
+	background-image: url('../img/hero-crowdedbuildings-comp.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.learn-more {
+	margin: 0;
+}
+
+.modal-button {
+	padding: 15px;
+}
+
+#btn-learn-more {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#btn-learn-more h5 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+}
+
+#modalembed {
+  height: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* testamonial boxes */
+.testimonial-box {
+	/* display: inline-block; */
+	/* width: 33%; */
+	padding: 20px 30px;
+}
+
+.testimonial-content {
+	background: #FFF;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.testimonial-author {
+
+}
+
+.testimonial-author img {
+	float: left;
+	width: 80px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.testimonial-author h5 {
+	font-size: 18px;
+	margin: 0;
+	padding-top: 15px;
+}
+
+.testimonial-author span {
+	color: #999;
+	font-size: 14px;
+}
+
+/* portfolio */
+#portfolio {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio-row {
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.portfolio-box {
+	height: 300px !important;
+	margin: 0 auto !important;
+	padding: 2%;
+	position: relative; /* new */
+}
+
+.portfolio-pic {
+	display: block; /* new */
+	/* vertical-align: middle; */ /* had to remove */
+	height: 100% !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* have to wait and see how this will fuck up everything else */
+.work-img {
+  /* display: block; */ /* needed to center the element with margin */
+  /* margin: auto; */ /* center the image inside the column if it's smaller */
+  /* max-width: 200px;*/ /* needs to be set to the width of your image files if they are relatively small */
+ /* position: relative; is needed for .info position: absolute to work */
+}
+
+.info {
+	display: none;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 2%;
+  color:#999;
+	text-shadow: black;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+	font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.proj-title {
+  font-weight: 100;
+}
+
+/* carousel */
+.carousel-buttons {
+	padding-top: 2%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.carousel {
+	padding-top: 0;
+}
+
+.carousel .item {
+	height: 700px;
+}
+
+.carousel-image {
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 10%;
+}
+
+/* the picture of the surface is too low */
+#image-3 {
+	
+}
+
+/* examples */
+.work-examples {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#work-example-1 {
+  background-image: url("../img/hero-lightscape-comp.jpg");
+}
+
+#work-example-2 {
+  background-image: url("../img/hero-reflectivewindows-comp.jpg");
+	/* background-attachment: fixed; */
+}
+
+#work-example-box {
+	background: #efefef;
+	max-height: 90% !important;
+}
+
+#work-example-left {
+	/* background-color: #999; */
+}
+
+#work-example-left img {
+	height: 500px;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#work-example-left iframe {
+	height: 500px;
+	width: 100%;
+	padding: 1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#work-example-right {
+	/* height: 500px; */
+  text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	/* margin-bottom: 15px; */
+	font-size: 20px;
+	color: #999;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+/* accordion */
+#accordion {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.panel-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #999;
+}
+
+.panel-body p {
+	font-size: 16px;
+}
+
+/* contact */
+#contact {
+	margin: 0 auto;
+}
+
+.contact-form {
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	line-height: 1.5;
+}
+
+/* footer */
+footer   {
+  background: #222;
+  color: #777;
+  padding: 40px;
+  text-align: center;
+}
+
+footer img   {
+  display: block;
+  border-radius: 5px;
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+/* responsive */
+/* mobile stylings */
+@media screen and (max-width: 768px) {
+	
+	/* header */
+	header #logo {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	header #main-navigation {
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+
+	/* hero */
+	.hero {
+		min-height: 300px;
+	}
+
+	.hero-content {
+		padding-top: 80px;
+	}
+
+	.hero-title {
+		font-size: 30px;
+	}
+
+	.hero-content p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	.hero-content a {
+		font-size: 14px;
+		padding: 10px 15px;
+		border-width: 1px;
+		background: #FFF;
+		color: #333;
+	}
+
+	/* feature boxes */
+	.feature-box {
+		width: 100%;
+		display: block;
+	}
+
+	/* testimonial boxes */
+	.testimonial-box {
+		width: 100%;
+		display: block;
+	}
+
+	/* accordion */
+	#work-example-right {
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+	}
+
+	/* carousel */
+	.carousel .item {
+		height: 300px;
+	}
+}

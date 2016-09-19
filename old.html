@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Sretenovic</title>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- fonts -->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900&subset=latin,latin-ext" type="text/css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<!-- header -->
+	<header id="site-header">
+
+		<!-- logo -->
+		<a id="logo" href="index.html">
+			<img src="img/avatar.jpg" alt="avatar">
+			My Website
+		</a>
+
+		<!-- main navigation -->
+		<nav id="main-navigation">
+			<ul>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</nav>
+
+	</header> <!-- end header -->
+
+	<!-- main -->
+	<main id="site-main">
+
+		<!-- hero section -->
+		<div class="hero" id="main-hero">
+
+			<div class="hero-content">
+				<h1 class="hero-title">This is a hero title</h1>
+				<p>The best and brightest website ever.</p>
+
+				<a href="#">Learn More</a>
+				<a href="#">Sign up</a>
+
+			</div>
+
+		</div>
+
+		<!-- features -->
+
+		<section class="site-section">
+			<div class="site-section-inside">
+				<div class="section-header">
+					<h2>Key Features</h2>
+				</div>
+
+				<div class="feature-box">
+					<img src="img/star.png" alt="Easy to Use">
+					<h5>Easy to use</h5>
+					<p>So easy a toddler can use it</p>
+				</div>
+
+				<div class="feature-box">
+					<img src="img/like.png" alt="Fun to Use">
+					<h5>Fun to use</h5>
+					<p>As fun as a bouncy house!</p>
+				</div>
+
+				<div class="feature-box">
+					<img src="img/heart.png" alt="You'll love it">
+					<h5>You'll love it</h5>
+					<p>The best thing since sliced bread!</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-- about -->
+		
+		<div class="hero" id="hero-about">
+			<div class="hero-content">
+				<h1 class="hero-title">About David</h1>
+				<p>The greatest web dev ever.</p>
+			</div>
+		</div>
+
+		<section class="site-section" id="about">
+			<div class="site-section-inside">
+				<div class="section-header">
+					<h2> JavaScript / jQuery </h2>
+				</div> <!-- end section header -->
+
+				<div class="feature-box">
+					<h5>Parallax</h5>
+					<p>Uses 'stellar.js' for parallax effects</p>
+				</div><!-- end feature-box -->
+
+				<div class="feature-box">
+					<h5>Scrollspy</h5>
+					<p>Still to be re-implemented!</p>
+				</div><!-- end feature-box -->
+
+				<div class="feature-box">
+					<h5>Social Media</h5>
+					<p>Still to be re-implemented!</p>
+				</div> <!-- end feature-box -->
+			</div> <!-- end site-section-inside -->
+		</section> <!-- end about section -->
+
+		<!-- testimonials -->
+
+		<section class="site-section site-section-secondary">
+			<div class="site-section-inside">
+				<div class="section-header">
+					<h2>What the people say</h2>
+				</div>
+
+				<div class="testimonial-box">
+					<div class="testimonial-content">
+						Their service is the best!
+					</div>
+					<div class="testimonial-author">
+						<img src="img/cage400.png" alt="Brian Cage">
+						<h5>Brian Cage</h5>
+						<span>He's not a man, he's a Machine!</span>
+					</div>
+				</div>
+
+				<div class="testimonial-box">
+					<div class="testimonial-content">
+						Their service is the best!
+					</div>
+					<div class="testimonial-author">
+						<img src="img/savage400.png" alt="Randy Savage">
+						<h5>Randy Savage</h5>
+						<span>The cream of the crop</span>
+					</div>
+				</div>
+
+				<div class="testimonial-box">
+					<div class="testimonial-content">
+						Their service is the best!
+					</div>
+					<div class="testimonial-author">
+						<img src="img/hart400.png" alt="Bret Hart">
+						<h5>Bret Hart</h5>
+						<span>The best there was</span>
+					</div>
+				</div> <!-- end testimonial-box -->
+			</div> <!-- end site-section-inside -->
+		</section>
+
+	</main>
+
+	<!-- footer -->
+	<footer id="footer">
+
+		<img src="img/avatar.jpg" alt="Footer Logo">
+		<span>My Website<br>Copyright &copy; 2016-3010</span>
+
+	</footer>
+
+	<!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- stellar script -->
+    <script>$.stellar({
+      horizontalScrolling: false,
+      responsive: true
+      });</script>
+    <!-- scrollspy js -->
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function () {
+            window.location.hash = href;
+          });
+          return false;
+        });
+    </script>
+    <!-- accordion fix -->
+    <script>$('#accordion').collapse().height('auto');</script>
+
+</body>
+</html>
